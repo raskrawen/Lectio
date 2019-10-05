@@ -29,6 +29,7 @@ function greet() {
   fill(color(220,80,100));
   //console.log(inputAdgangskode.value());
   text("Dit kodeord til Lectio er.." + inputAdgangskode.value(), 30, 50);
-  text("Heldigvis gemmer jeg IKKE din kode!", 30, 100);
+  text("Denne side er til undervisning og gemmer IKKE din kode!", 30, 100);
+  text("Hvordan kan du se, at siden IKKE er ægte?",30,150);
 }
 }
