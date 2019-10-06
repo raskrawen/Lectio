@@ -25,10 +25,10 @@ function setup() {
 function greet() {
   if (inputAdgangskode.value()!='') {
   textSize(20);
-    stroke('black');
+    stroke('red');
     fill(color(220, 100, 100));
     //console.log(inputAdgangskode.value());
-    let s = "Dit kodeord til Lectio er.." + inputAdgangskode.value() + "\n" + "Denne side er til undervisning og gemmer IKKE din kode! \n\n 1) Hvad indikerer, at siden ikke er ægte? \n 2) Skriv et forslag til en e-mail på max 10 linjer, som kan lokke relevante brugere ind på siden.";
+    let s = "Dit kodeord til Lectio er.." + inputAdgangskode.value() + ".\n Denne side er til undervisning og gemmer IKKE din kode! \n\n Opgaver: \n 1) Hvad indikerer, at siden ikke er ægte? \n 2) Skriv et forslag til en e-mail på max 10 linjer, som kan lokke relevante brugere ind på siden.";
     text(s, 50, 400, 1000, 1000);
   }
 }
