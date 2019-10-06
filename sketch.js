@@ -26,10 +26,9 @@ function greet() {
   if (inputAdgangskode.value()!='') {
   textSize(32);
   stroke('red');
-  fill(color(220,80,100));
+  fill(color(220,80,90));
   //console.log(inputAdgangskode.value());
-  text("Dit kodeord til Lectio er.." + inputAdgangskode.value(), 30, 50);
-  text("Denne side er til undervisning og gemmer IKKE din kode!", 30, 100);
-  text("Hvordan kan du se, at siden IKKE er ægte?",30,150);
-}
+  let s = "Dit kodeord til Lectio er.." + inputAdgangskode.value() + /n + "Denne side er til undervisning og gemmer IKKE din kode!";
+  text(s, 30, 50, 500, 500);
+  }
 }
