@@ -24,11 +24,10 @@ function setup() {
 
 function greet() {
   if (inputAdgangskode.value()!='') {
-  textSize(20);
-    stroke('red');
-    fill(color(220, 100, 100));
+  textSize(16);
+    fill(color(220, 100, 0));
     //console.log(inputAdgangskode.value());
-    let s = "Dit kodeord til Lectio er.." + inputAdgangskode.value() + ".\n Denne side er til undervisning og gemmer IKKE din kode! \n\n Opgaver: \n 1) Hvad indikerer, at siden ikke er ægte? \n 2) Skriv et forslag til en e-mail på max 10 linjer, som kan lokke relevante brugere ind på siden.";
+    let s = " Tak. Jeg har nu dit Lectio-kodeord, som starter med " + inputAdgangskode.value().slice(0,4) + "..\n Denne side er til undervisning og misbruger IKKE din kode! \n\n Opgaver: \n 1) Hvad indikerer at siden er ægte?\n 2) Hvad indikerer at siden ikke er ægte? \n 3) Hvor mange % tror du vil indtaste deres kodeord på siden? Begrund. \n 4) Skriv et forslag til en e-mail på max 10 linjer, som kan lokke relevante brugere ind på siden.";
     text(s, 50, 400, 1000, 1000);
   }
 }
