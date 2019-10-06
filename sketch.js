@@ -14,6 +14,7 @@ function setup() {
   inputAdgangskode = createInput();
   inputAdgangskode.position(105, 280);
   inputAdgangskode.size(126,15);
+  inputAdgangskode.changed(greet);
   
   let button = createButton('');
   button.size(55,24);
